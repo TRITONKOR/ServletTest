@@ -10,14 +10,13 @@ import org.example.servlettest.persistence.repository.ProductRepository;
 public class AppContextListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
+        /*
         ProductRepository productRepository = new ProductRepository();
-        for (int i = 1; i <= 10; i++) {
-            productRepository.addProduct(new Product(i, "Product " + i, i * 10.0));
+        for (long i = 1; i <= 5; i++) {
+            productRepository.saveOrUpdate(new Product(i, "Product " + i, i * 10.0));
         }
         sce.getServletContext().setAttribute("productRepository", productRepository);
-    }
 
-    @Override
-    public void contextDestroyed(ServletContextEvent sce) {
+         */
     }
 }

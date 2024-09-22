@@ -1,17 +1,19 @@
 package org.example.servlettest.persistence.entity;
 
-public class Product {
-    private int id;
-    private String title;
-    private double cost;
+import java.math.BigDecimal;
 
-    public Product(int id, String title, double cost) {
+public class Product {
+    private Long id;
+    private String title;
+    private BigDecimal cost;
+
+    public Product(Long id, String title, BigDecimal cost) {
         this.id = id;
         this.title = title;
         this.cost = cost;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -19,7 +21,7 @@ public class Product {
         return title;
     }
 
-    public double getCost() {
+    public BigDecimal getCost() {
         return cost;
     }
 

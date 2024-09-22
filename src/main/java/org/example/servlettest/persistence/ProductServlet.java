@@ -16,7 +16,7 @@ public class ProductServlet extends HttpServlet {
             throws ServletException,  IOException {
 
         ProductRepository productRepository = (ProductRepository) getServletContext().getAttribute("productRepository");
-        req.setAttribute("products", productRepository.getProducts());
+        //req.setAttribute("products", productRepository.getProducts());
         req.getRequestDispatcher("/WEB-INF/views/products.jsp").forward(req, resp);
     }
 }
